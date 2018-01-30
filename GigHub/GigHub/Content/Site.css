@@ -32,15 +32,24 @@ textarea {
 
 .navbar-inverse .navbar-brand {
     color: #0ed227;
+    font-weight:bold;
 }
 
 .navbar-inverse .navbar-nav > li > a {
     color: #ffffff;
 }
+.navbar-inverse .navbar-nav > .open > a, .navbar-inverse .navbar-nav > .open > a:hover, .navbar-inverse .navbar-nav > .open > a:focus {
+    color: #ffffff;
+    background-color: #b5080887;
+}
+.dropdown-menu {
+    box-shadow:none;
+    -webkit-box-shadow:none;
+}
 
 body {
   font-family: "Lato", Helvetica, Arial, sans-serif;
-  font-size: 14px;
+  font-size: 17px;
   line-height: 1.428571429;
   color: #333333;
   background-color: #ffffff;
@@ -61,4 +70,24 @@ h6,
   font-family: "Lato", Helvetica, Arial, sans-serif;
   font-weight: 500;
   line-height: 1.1;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+.form-control {
+    font-size: 17px;
+    padding: 20px 15px;
+    border-radius: 9px;
+}
+
+.form-control:focus{
+    border-color:#2097f5;
+    box-shadow: none;
+    -webkit-box-shadow: none:
+}
+.btn {
+    padding: 7px 20px;
+    font-size: 17px;
+    border-radius: 9px;
 }
