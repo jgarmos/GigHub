@@ -16,6 +16,7 @@ namespace GigHub.Controllers
             _context = new ApplicationDbContext();
         }
 
+        [Authorize]
         public ActionResult Index()
         {
             //var upcomingGigs = _context.Gigs.Include(g => g.Artist).Where(g => g.DateTime > DateTime.Now);
